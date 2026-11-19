@@ -1,0 +1,193 @@
+{
+  "version": 1,
+  "models": [
+    {
+      "id": "coffee-mug",
+      "name": "Coffee Mug",
+      "category": "Objects / Kitchen",
+      "description": "A coffee mug model for kitchen and dining scenes.",
+      "asset": "models/coffee-mug.glb",
+      "license": "CC0-1.0",
+      "tags": [
+        "coffee mug",
+        "kitchen",
+        "drinkware",
+        "object"
+      ],
+      "thumbnail": "thumbnails/coffee-mug.png"
+    },
+    {
+      "id": "half-circle-wall-lamp",
+      "name": "Half Circle Wall Lamp",
+      "category": "Objects / Lighting",
+      "description": "A wall lamp model built around a half-circle silhouette. Inspect its Draco-compressed GLB in the browser and export an uncompressed GLB.",
+      "asset": "models/half_circle_wall_lamp.glb",
+      "license": "CC0-1.0",
+      "tags": [
+        "wall lamp",
+        "lighting",
+        "half circle",
+        "object"
+      ],
+      "thumbnail": "thumbnails/half_circle_wall_lamp.png"
+    },
+    {
+      "id": "snow-sled",
+      "name": "Snow Sled",
+      "category": "Objects / Winter",
+      "description": "A snow sled model for winter scenes. Inspect its Draco-compressed GLB in the browser and export an uncompressed GLB.",
+      "asset": "models/snow-sled.glb",
+      "license": "CC0-1.0",
+      "tags": [
+        "snow sled",
+        "winter",
+        "sled",
+        "object"
+      ],
+      "thumbnail": "thumbnails/snow-sled.png"
+    },
+    {
+      "id": "dice",
+      "name": "Dice",
+      "category": "Uncategorized",
+      "description": "A 3D dice model. Add a more detailed description and category when those details are confirmed.",
+      "asset": "models/dice.glb",
+      "license": "CC0-1.0",
+      "tags": [
+        "dice",
+        "uncategorized"
+      ],
+      "thumbnail": "thumbnails/dice.png"
+    },
+    {
+      "id": "tray",
+      "name": "Tray",
+      "category": "Objects / Containers",
+      "description": "A shallow container for holding objects.",
+      "asset": "models/tray.glb",
+      "license": "CC0-1.0",
+      "tags": [
+        "tray",
+        "container",
+        "planter",
+        "object"
+      ],
+      "thumbnail": "thumbnails/tray.png"
+    },
+    {
+      "id": "pallet",
+      "name": "Pallet",
+      "category": "Objects / Containers",
+      "description": "A simple pallet model for storage, shipping, and warehouse scenes.",
+      "asset": "models/pallet.glb",
+      "license": "CC0-1.0",
+      "tags": [
+        "pallet",
+        "shipping",
+        "warehouse",
+        "container",
+        "object"
+      ]
+    },
+    {
+      "id": "low-poly-barrel",
+      "name": "Low-Poly Barrel",
+      "category": "Objects / Containers",
+      "description": "A low-poly barrel model for storage and scene dressing.",
+      "asset": "models/low-poly-barrel.glb",
+      "license": "CC0-1.0",
+      "tags": [
+        "low poly",
+        "barrel",
+        "container",
+        "object"
+      ]
+    },
+    {
+      "id": "traffic-cone",
+      "name": "Traffic Cone",
+      "category": "Objects / Street / Safety",
+      "description": "A traffic cone model for road and construction scenes.",
+      "asset": "models/traffic-cone.glb",
+      "license": "CC0-1.0",
+      "tags": [
+        "traffic cone",
+        "road safety",
+        "construction",
+        "object"
+      ]
+    },
+    {
+      "id": "traffic-sign",
+      "name": "Traffic Sign",
+      "category": "Objects / Street / Law / Safety",
+      "description": "A traffic sign model for road information.",
+      "asset": "models/traffic-sign.glb",
+      "license": "CC0-1.0",
+      "tags": [
+        "traffic sign",
+        "road safety",
+        "law",
+        "object"
+      ]
+    },
+    {
+      "id": "aa-battery",
+      "name": "AA Battery",
+      "category": "Objects / Electronics",
+      "description": "An AA battery model for electronics and household scenes.",
+      "asset": "models/AA-battery.glb",
+      "license": "CC0-1.0",
+      "tags": [
+        "aa battery",
+        "battery",
+        "electronics",
+        "object"
+      ]
+    },
+    {
+      "id": "bowling-ball",
+      "name": "Bowling Ball",
+      "category": "Objects / Sports",
+      "description": "A bowling ball model for bowling and recreation scenes.",
+      "asset": "models/bowling-ball.glb",
+      "license": "CC0-1.0",
+      "tags": [
+        "bowling ball",
+        "bowling",
+        "sports",
+        "recreation",
+        "object"
+      ]
+    },
+    {
+      "id": "bowling-pin",
+      "name": "Bowling Pin",
+      "category": "Objects / Sports",
+      "description": "A bowling pin model for bowling and recreation scenes.",
+      "asset": "models/bowling-pin.glb",
+      "license": "CC0-1.0",
+      "tags": [
+        "bowling pin",
+        "bowling",
+        "sports",
+        "recreation",
+        "object"
+      ]
+    },
+    {
+      "id": "street-lantern",
+      "name": "Street Lantern",
+      "category": "Objects / Street / Lighting",
+      "description": "A street lantern model for outdoor and urban scenes.",
+      "asset": "models/street-lantern.glb",
+      "license": "CC0-1.0",
+      "tags": [
+        "street lantern",
+        "street lighting",
+        "outdoor",
+        "object"
+      ]
+    }
+  ]
+}
