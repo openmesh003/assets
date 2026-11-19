@@ -87,7 +87,8 @@
         "warehouse",
         "container",
         "object"
-      ]
+      ],
+      "thumbnail": "thumbnails/pallet.png"
     },
     {
       "id": "low-poly-barrel",
@@ -101,7 +102,8 @@
         "barrel",
         "container",
         "object"
-      ]
+      ],
+      "thumbnail": "thumbnails/low-poly-barrel.png"
     },
     {
       "id": "traffic-cone",
@@ -115,7 +117,8 @@
         "road safety",
         "construction",
         "object"
-      ]
+      ],
+      "thumbnail": "thumbnails/traffic-cone.png"
     },
     {
       "id": "traffic-sign",
@@ -129,7 +132,8 @@
         "road safety",
         "law",
         "object"
-      ]
+      ],
+      "thumbnail": "thumbnails/traffic-sign.png"
     },
     {
       "id": "aa-battery",
@@ -143,7 +147,8 @@
         "battery",
         "electronics",
         "object"
-      ]
+      ],
+      "thumbnail": "thumbnails/AA-battery.png"
     },
     {
       "id": "bowling-ball",
@@ -158,7 +163,8 @@
         "sports",
         "recreation",
         "object"
-      ]
+      ],
+      "thumbnail": "thumbnails/bowling-ball.png"
     },
     {
       "id": "bowling-pin",
@@ -173,7 +179,8 @@
         "sports",
         "recreation",
         "object"
-      ]
+      ],
+      "thumbnail": "thumbnails/bowling-pin.png"
     },
     {
       "id": "street-lantern",
@@ -187,7 +194,8 @@
         "street lighting",
         "outdoor",
         "object"
-      ]
+      ],
+      "thumbnail": "thumbnails/street-lantern.png"
     }
   ]
 }
