@@ -12,13 +12,13 @@ Options (after the `--`):
     --cpu              Do not try GPU rendering.
 
 Each model is imported, framed from a fixed 3/4 angle, lit with a simple
-studio rig and rendered on a transparent background with a soft contact
-shadow. Output goes to thumbnails/<asset basename>.png and the model's
-"thumbnail" field in catalog.json is filled in when it is missing.
+studio rig and rendered on a transparent background (no floor shadow).
+Output goes to thumbnails/<asset basename>.png and the model's
+"thumbnail" field in catalog.json is filled in when it is missing. Each
+entry's "formats" map is also refreshed first (see sync_catalog.py).
 """
 
 import argparse
-import json
 import math
 import os
 import sys
@@ -27,8 +27,8 @@ import time
 import bpy
 from mathutils import Vector
 
-ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-CATALOG = os.path.join(ROOT, "catalog.json")
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from sync_catalog import ROOT, load_catalog, save_catalog, sync_formats  # noqa: E402
 
 # Camera looks down at the model from the front-right, like a product shot.
 VIEW_AZIMUTH_DEG = 35.0
@@ -196,22 +196,6 @@ def add_lighting(scene, lo, hi):
     scene.world = world
 
 
-def add_shadow_catcher(scene, lo, hi):
-    """Invisible floor that only keeps the model's shadow, so the PNG stays transparent."""
-    size = (hi - lo).length * 20
-    mesh = bpy.data.meshes.new("Floor")
-    half = size / 2
-    z = lo.z
-    mesh.from_pydata(
-        [(-half, -half, z), (half, -half, z), (half, half, z), (-half, half, z)], [], [(0, 1, 2, 3)]
-    )
-    floor = bpy.data.objects.new("Floor", mesh)
-    floor.location.x = (lo.x + hi.x) / 2
-    floor.location.y = (lo.y + hi.y) / 2
-    floor.is_shadow_catcher = True
-    scene.collection.objects.link(floor)
-
-
 def thumbnail_path(entry):
     base = os.path.splitext(os.path.basename(entry["asset"]))[0]
     return entry.get("thumbnail") or f"thumbnails/{base}.png"
@@ -233,29 +217,17 @@ def render_one(entry, args, thumb_rel):
     lo, hi = world_bounds(objects)
     add_camera(scene, lo, hi)
     add_lighting(scene, lo, hi)
-    add_shadow_catcher(scene, lo, hi)
     os.makedirs(os.path.dirname(out_path), exist_ok=True)
     scene.render.filepath = out_path
     bpy.ops.render.render(write_still=True)
     return device
 
 
-def save_catalog(catalog, original_text):
-    text = json.dumps(catalog, indent=2, ensure_ascii=False)
-    if original_text.endswith("\n"):
-        text += "\n"
-    if text != original_text:
-        with open(CATALOG, "w", encoding="utf-8") as f:
-            f.write(text)
-        return True
-    return False
-
-
 def main():
     args = parse_args()
-    with open(CATALOG, encoding="utf-8") as f:
-        original = f.read()
-    catalog = json.loads(original)
+    catalog, original = load_catalog()
+    for change in sync_formats(catalog):
+        print(f"[formats] {change}")
 
     models = catalog["models"]
     if args.only:
@@ -288,7 +260,7 @@ def main():
         print(f"[thumb] {entry['id']:<24} -> {thumb_rel}  ({time.time() - start:.1f}s, {device})")
 
     if save_catalog(catalog, original):
-        print("[thumb] updated thumbnail paths in catalog.json")
+        print("[thumb] updated catalog.json")
     print(f"[thumb] rendered {rendered}, up to date {skipped}, failed {len(failed)}")
     for model_id, reason in failed:
         print(f"[thumb] FAILED {model_id}: {reason}", file=sys.stderr)
