@@ -24,10 +24,11 @@
       "id": "half-circle-wall-lamp",
       "name": "Half Circle Wall Lamp",
       "category": "Objects / Lighting",
-      "description": "A wall lamp model built around a half-circle silhouette. Inspect its Draco-compressed GLB in the browser and export an uncompressed GLB.",
-      "asset": "models/half_circle_wall_lamp.glb",
+      "description": "A wall lamp model built around a half-circle silhouette.",
+      "asset": "models/half-circle-wall-lamp.glb",
       "formats": {
-        "glb": "models/half_circle_wall_lamp.glb"
+        "glb": "models/half-circle-wall-lamp.glb",
+        "blend": "models/half-circle-wall-lamp.blend"
       },
       "license": "CC0-1.0",
       "tags": [
@@ -36,16 +37,17 @@
         "half circle",
         "object"
       ],
-      "thumbnail": "thumbnails/half_circle_wall_lamp.png"
+      "thumbnail": "thumbnails/half-circle-wall-lamp.png"
     },
     {
       "id": "snow-sled",
       "name": "Snow Sled",
       "category": "Objects / Winter",
-      "description": "A snow sled model for winter scenes. Inspect its Draco-compressed GLB in the browser and export an uncompressed GLB.",
+      "description": "A snow sled model for winter scenes.",
       "asset": "models/snow-sled.glb",
       "formats": {
-        "glb": "models/snow-sled.glb"
+        "glb": "models/snow-sled.glb",
+        "blend": "models/snow-sled.blend"
       },
       "license": "CC0-1.0",
       "tags": [
@@ -59,16 +61,20 @@
     {
       "id": "dice",
       "name": "Dice",
-      "category": "Uncategorized",
-      "description": "A 3D dice model. Add a more detailed description and category when those details are confirmed.",
+      "category": "Objects / Games",
+      "description": "A six-sided die model for board game and tabletop scenes.",
       "asset": "models/dice.glb",
       "formats": {
-        "glb": "models/dice.glb"
+        "glb": "models/dice.glb",
+        "blend": "models/dice.blend"
       },
       "license": "CC0-1.0",
       "tags": [
         "dice",
-        "uncategorized"
+        "die",
+        "board-game",
+        "games",
+        "object"
       ],
       "thumbnail": "thumbnails/dice.png"
     },
@@ -79,7 +85,8 @@
       "description": "A shallow container for holding objects.",
       "asset": "models/tray.glb",
       "formats": {
-        "glb": "models/tray.glb"
+        "glb": "models/tray.glb",
+        "blend": "models/tray.blend"
       },
       "license": "CC0-1.0",
       "tags": [
@@ -97,7 +104,8 @@
       "description": "A simple pallet model for storage, shipping, and warehouse scenes.",
       "asset": "models/pallet.glb",
       "formats": {
-        "glb": "models/pallet.glb"
+        "glb": "models/pallet.glb",
+        "blend": "models/pallet.blend"
       },
       "license": "CC0-1.0",
       "tags": [
@@ -116,7 +124,8 @@
       "description": "A low-poly barrel model for storage and scene dressing.",
       "asset": "models/low-poly-barrel.glb",
       "formats": {
-        "glb": "models/low-poly-barrel.glb"
+        "glb": "models/low-poly-barrel.glb",
+        "blend": "models/low-poly-barrel.blend"
       },
       "license": "CC0-1.0",
       "tags": [
@@ -134,7 +143,8 @@
       "description": "A traffic cone model for road and construction scenes.",
       "asset": "models/traffic-cone.glb",
       "formats": {
-        "glb": "models/traffic-cone.glb"
+        "glb": "models/traffic-cone.glb",
+        "blend": "models/traffic-cone.blend"
       },
       "license": "CC0-1.0",
       "tags": [
@@ -152,7 +162,8 @@
       "description": "A traffic sign model for road information.",
       "asset": "models/traffic-sign.glb",
       "formats": {
-        "glb": "models/traffic-sign.glb"
+        "glb": "models/traffic-sign.glb",
+        "blend": "models/traffic-sign.blend"
       },
       "license": "CC0-1.0",
       "tags": [
@@ -170,7 +181,8 @@
       "description": "An AA battery model for electronics and household scenes.",
       "asset": "models/AA-battery.glb",
       "formats": {
-        "glb": "models/AA-battery.glb"
+        "glb": "models/AA-battery.glb",
+        "blend": "models/AA-battery.blend"
       },
       "license": "CC0-1.0",
       "tags": [
@@ -188,7 +200,8 @@
       "description": "A bowling ball model for bowling and recreation scenes.",
       "asset": "models/bowling-ball.glb",
       "formats": {
-        "glb": "models/bowling-ball.glb"
+        "glb": "models/bowling-ball.glb",
+        "blend": "models/bowling-ball.blend"
       },
       "license": "CC0-1.0",
       "tags": [
@@ -207,7 +220,8 @@
       "description": "A bowling pin model for bowling and recreation scenes.",
       "asset": "models/bowling-pin.glb",
       "formats": {
-        "glb": "models/bowling-pin.glb"
+        "glb": "models/bowling-pin.glb",
+        "blend": "models/bowling-pin.blend"
       },
       "license": "CC0-1.0",
       "tags": [
@@ -226,7 +240,8 @@
       "description": "A street lantern model for outdoor and urban scenes.",
       "asset": "models/street-lantern.glb",
       "formats": {
-        "glb": "models/street-lantern.glb"
+        "glb": "models/street-lantern.glb",
+        "blend": "models/street-lantern.blend"
       },
       "license": "CC0-1.0",
       "tags": [
