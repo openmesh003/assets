@@ -251,6 +251,26 @@
         "object"
       ],
       "thumbnail": "thumbnails/street-lantern.png"
+    },
+    {
+      "id": "skeleton-key",
+      "name": "Skeleton Key",
+      "category": "Objects / Tools",
+      "description": "An old-fashioned skeleton key model with a triangular bow, for fantasy, mystery and puzzle scenes.",
+      "asset": "models/skeleton-key.glb",
+      "formats": {
+        "glb": "models/skeleton-key.glb",
+        "blend": "models/skeleton-key.blend"
+      },
+      "license": "CC0-1.0",
+      "tags": [
+        "skeleton key",
+        "key",
+        "lock",
+        "antique",
+        "object"
+      ],
+      "thumbnail": "thumbnails/skeleton-key.png"
     }
   ]
 }
